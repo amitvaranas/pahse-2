@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-25T14:51:52 IST" name="Suite" finished-at="2023-01-25T14:54:39 IST" duration-ms="166490">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-01-25T14:51:52 IST" name="Test" finished-at="2023-01-25T14:54:39 IST" duration-ms="166490">
+      <class name="com.run.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:51:52 IST" name="setUpClass" finished-at="2023-01-25T14:51:52 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@40943a6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:51:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:52:06 IST" duration-ms="14101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["set the location"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["location"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:52:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:52:20 IST" duration-ms="13468" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["update the location"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["location"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=109.0.1518.55)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c0563dd2663190d6a6c6956128683e63, clickElement {id=06830c13-eb56-4ace-94a2-ccc4e0a5623e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63239}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63239/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (c0563dd2663190d6a6c6956128683e63)] -> xpath: //div[@class="J80xC"]]
+Session ID: c0563dd2663190d6a6c6956128683e63]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=109.0.1518.55)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c0563dd2663190d6a6c6956128683e63, clickElement {id=06830c13-eb56-4ace-94a2-ccc4e0a5623e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63239}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63239/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (c0563dd2663190d6a6c6956128683e63)] -> xpath: //div[@class="J80xC"]]
+Session ID: c0563dd2663190d6a6c6956128683e63
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pageObject.Homepage.UpdateLocation(Homepage.java:138)
+at stefDef.locationSteps.i_click_on_other_location(locationSteps.java:98)
+at ✽.I click on other location(file:///C:/Users/shashgu3/eclipse-workspace/Phase2/Features/a_location.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:52:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:52:36 IST" duration-ms="16017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["search a dish"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["dish"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:52:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:52:46 IST" duration-ms="9766" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["display all product name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["dish"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [074326ffa63a73132872e230f61ea527, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63344}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63344/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 074326ffa63a73132872e230f61ea527]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [074326ffa63a73132872e230f61ea527, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63344}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63344/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 074326ffa63a73132872e230f61ea527
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:946)
+at pageObject.Homepage.home(Homepage.java:22)
+at stefDef.dishSteps.i_run_algorithm_to_find_list_of_product_name(dishSteps.java:41)
+at ✽.I run algorithm to find list of product name(file:///C:/Users/shashgu3/eclipse-workspace/Phase2/Features/b_dish.feature:40)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:52:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:53:09 IST" duration-ms="22897" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["display all product price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["dish"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:53:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:53:29 IST" duration-ms="20444" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["dish"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="_1RPOp">...</div> is not clickable at point (539, 522). Other element would receive the click: <div data-testid="search-pl-dish-first-v2-card" class="styles_container__2GTLR styles_containerV2__1_U51">...</div>
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [330e5810aff4690009efcbe0b38ce016, clickElement {id=68c5344a-d1a5-4ed7-ae9f-e064c4aeb858}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63444}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63444/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (330e5810aff4690009efcbe0b38ce016)] -> xpath: //div[@class="_1RPOp"]]
+Session ID: 330e5810aff4690009efcbe0b38ce016]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="_1RPOp">...</div> is not clickable at point (539, 522). Other element would receive the click: <div data-testid="search-pl-dish-first-v2-card" class="styles_container__2GTLR styles_containerV2__1_U51">...</div>
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [330e5810aff4690009efcbe0b38ce016, clickElement {id=68c5344a-d1a5-4ed7-ae9f-e064c4aeb858}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63444}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63444/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (330e5810aff4690009efcbe0b38ce016)] -> xpath: //div[@class="_1RPOp"]]
+Session ID: 330e5810aff4690009efcbe0b38ce016
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pageObject.Homepage.Add_to_cart(Homepage.java:112)
+at stefDef.dishSteps.i_click_in_add_button_on_any_of_the_the_given_product(dishSteps.java:105)
+at ✽.i click in add button on any of the the given product(file:///C:/Users/shashgu3/eclipse-workspace/Phase2/Features/b_dish.feature:62)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:53:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:54:03 IST" duration-ms="34356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["delete an item from cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:54:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-25T14:54:39 IST" duration-ms="35099" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["update  an item from cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (496, 604)
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d06d1dd4f36642bfa0c01785bc72584a, clickElement {id=188e43c9-d51e-4b89-aaca-cd51cf6831f0}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63579}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63579/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (d06d1dd4f36642bfa0c01785bc72584a)] -> xpath: //div[@class="_3G9po"]//button[@class="b0G1m"]]
+Session ID: d06d1dd4f36642bfa0c01785bc72584a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (496, 604)
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d06d1dd4f36642bfa0c01785bc72584a, clickElement {id=188e43c9-d51e-4b89-aaca-cd51cf6831f0}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:63579}, msedge: {msedgedriverVersion: 109.0.1518.61 (354b36f96bab..., userDataDir: C:\Users\shashgu3\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63579/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (d06d1dd4f36642bfa0c01785bc72584a)] -> xpath: //div[@class="_3G9po"]//button[@class="b0G1m"]]
+Session ID: d06d1dd4f36642bfa0c01785bc72584a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pageObject.Homepage.updateCart(Homepage.java:149)
+at stefDef.cartSteps.i_click_cart_option_and_update_items_from_the_cart(cartSteps.java:79)
+at ✽.I click cart option and update items from the cart(file:///C:/Users/shashgu3/eclipse-workspace/Phase2/Features/c_cart.feature:40)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.run.TestRunner@2a265ea9]" started-at="2023-01-25T14:54:39 IST" name="tearDownClass" finished-at="2023-01-25T14:54:39 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.run.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
